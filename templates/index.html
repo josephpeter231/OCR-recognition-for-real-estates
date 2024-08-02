@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Image Uploader</h1>
+    
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="folder_name">Folder Name:</label>
+        <input type="text" id="folder_name" name="folder_name" required>
+        <input type="file" name="files" multiple>
+        <button type="submit">Upload</button>
+    </form>
+    
+    <h2>Uploaded Folders</h2>
+    <ul>
+        {% for folder in folders %}
+            <li><a href="{{ url_for('view_folder', folder_name=folder['name']) }}">{{ folder['name'] }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

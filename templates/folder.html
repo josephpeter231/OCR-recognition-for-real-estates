@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ folder_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ folder_name }}</h1>
+    
+    <div class="image-gallery">
+        {% for image in images %}
+            <div class="image-item">
+                <a href="{{ url_for('image_details', folder_name=folder_name, filename=image) }}">
+                    <img src="{{ url_for('uploaded_file', folder_name=folder_name, filename=image) }}" alt="{{ image }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
