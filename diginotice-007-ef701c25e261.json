@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "diginotice-007",
+  "private_key_id": "ef701c25e2613ea6a86ef3fec0f0aba532d5a067",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCnPLWgpJKYbPuH\nsS2NQ4Af1DM2OMPZFvVPHKN2aap9F9ZlakR1IvxVx4Xomf212NLUJkwQUd5FqV1D\ncalySLDiCTLvFfzBm1/bW4mbbG1Iip7CpApqK8Ufa8x7a11/h4q89+ao7nfQDY56\nWpil6sq2aVEv04TdEHm5GBiMpPgqGEPxAgIAo70GOAbecHn4xlQ/DDyPdbyfs19U\nM9zqeW8+f02dY1kqo0C8E+iNQV4jOU7cA620QvjW/bh6ULmxHiOGxelFsjSpwWjp\nNuMfn7RtOwlPq5sjbnSytlhX6dR7cZ1GeNza3lWA6JvallAy2BLkuREGow2Umgre\ndKUzt8aZAgMBAAECggEAK1X9gMu0mx/+i/p7IdSAgn7z6FSMV5ht59q1dw1JmxHO\nwkfnxmzS84144z3oMzOk6kmkQ0RbszSAkOYGsTEp+ODGXJMXhLn0/Hw7a9WMehRF\nsI1ej4WZFpvSCJdZSp8+cdpRYKwuyvCAX69TSAdQETW4ToriroBC8pZOYj+reQiW\nca+KUCDfw9myzyjVyzPQG6ypgXvlN5ntZI/p4siqvihWcec3XVFmk1jP425FDD41\njofA3NQxEfPJLS7632enqi1yhZjg6JytkXIC0b6COIef+NMBqSwMleeAWsdjuRPb\nl7I+TPdbsOQGP3dKnkl1fSBniG3tJYM5ejmuQfLEywKBgQDQPjecP9m2aEozKeYB\nkSDm8OfJzc8RVGf1qy0eNdWY1914bFHBgnQIutM++95Z8nY89vkVvFOn+rp7ks8m\n7W/bXt/tMt3KhFQgk+Q5x0wXVTz1MJyJfH62uCvpl3hvHL8Wgzr3Agf9twKOhzBk\nMzwOvA+Gwx+FdbG5nVUXQzVRYwKBgQDNlxGy+fSuKERMbDZH5SNzieaJBOBmm6GQ\nDBcd0G+v+qNr7IX0apoNXvTVu2litsTd5GN1XyP26svmYrbDI8G2La9rikPnhQbs\n0KrhTf7pVOUpIr6vbMyTyziZADnx6oDNF1gRIyqdGMOsRQ/UvsA8WN8ibyWntb5I\nYkbiN9sm0wKBgQCSBK51z4fXkbVFvwFa4+rQROgi5z9lBWyIJOlUH6eQrvzKrhl9\nuP2oCWiK5414QL2L7hmmlhGK3hLZB45d22vtxM77wgknMjbTSSBlK0w9qDVAMD/z\nX+pyMR4Jg36dWuja3lYAUdpMm4Edc8oI2KwqINA6TKPTrz1Zy+qYjzXZxQKBgCjo\n48O6i17Qcm7GpbJ+vSQzj6U6TDD+zRJt5XewT1k0RaqnISy2vbrlZ1DUfy7+cYQ5\n+zSS3wQ2Sqaog/emuNg4lQyQMdzzEqKzDx3QOGZT11ntKQadXsQWD0gazG0AHesx\ntvuKBOPH1sAD6heKcZRQlu4yMcsClj+vFq3TMY+zAoGAZNuWUWD1NICof/IR/IHJ\n4KTGyB4RSo2coXkE39ajz7ZZqvorxZn53mIdtYyNC3Ig9H5XMgWV4yT5NFwoG4Id\n7Vp5KflTO+1df7swcSgzLG48Pq/BMzya3Vcu7bjRzzxlhrcyvhf6OyjJm5mbbKzt\ne8Qx+QlbJjnrbSmEm5xMqhA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "diginotice-ai@diginotice-007.iam.gserviceaccount.com",
+  "client_id": "100756399457591615233",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/diginotice-ai%40diginotice-007.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

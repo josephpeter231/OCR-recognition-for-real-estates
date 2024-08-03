@@ -9,18 +9,42 @@
 <body>
     <h1>Image Uploader</h1>
     
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="folder_name">Folder Name:</label>
-        <input type="text" id="folder_name" name="folder_name" required>
-        <input type="file" name="files" multiple>
+    <form id="uploadForm" action="{{ url_for('upload_folder') }}" method="post" enctype="multipart/form-data">
+        <input type="file" id="folderInput" name="folder" webkitdirectory mozdirectory directory multiple onchange="updateFolderPath()">
+        <input type="hidden" id="folderPath" name="folder_path">
         <button type="submit">Upload</button>
     </form>
     
-    <h2>Uploaded Folders</h2>
-    <ul>
-        {% for folder in folders %}
-            <li><a href="{{ url_for('view_folder', folder_name=folder['name']) }}">{{ folder['name'] }}</a></li>
+    <h2>Uploaded Images</h2>
+    <div class="image-container">
+        {% for image in images %}
+            <div class="image-item">
+                <h2>{{ image.filename }}</h2>
+                <img src="{{ url_for('get_image', image_id=image._id) }}" alt="{{ image.filename }}">
+                <button onclick="processImage('{{ image._id }}')">Process Image</button>
+                <div id="output-{{ image._id }}">
+                    {% if image.extracted_info %}
+                    <pre>{{ image.extracted_info | tojson(indent=2) }}</pre>
+                    {% endif %}
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
+
+    <script>
+        function updateFolderPath() {
+            const folderInput = document.getElementById('folderInput');
+            if (folderInput.files.length > 0) {
+                const folderPath = folderInput.files[0].webkitRelativePath.split('/')[0];
+                document.getElementById('folderPath').value = folderPath;
+            }
+        }
+
+        async function processImage(imageId) {
+            const response = await fetch(`/process_image/${imageId}`);
+            const data = await response.json();
+            document.getElementById(`output-${imageId}`).innerHTML = `<pre>${JSON.stringify(data.extracted_info, null, 2)}</pre>`;
+        }
+    </script>
 </body>
 </html>
